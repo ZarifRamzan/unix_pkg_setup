@@ -1,4 +1,4 @@
-# Install Neovim from githubi
+# Install Neovim from github  
 sudo rm /usr/bin/nvim 
 cd ~
 wget https://github.com/neovim/neovim/releases/download/v0.9.5/nvim.appimage
@@ -13,4 +13,4 @@ mkdir -p ~/.config/nvim
 cd ~/.config/nvim
 #wget https://raw.githubusercontent.com/nvim-lua/kickstart.nvim/master/init.lua
 cp init.lua ~/.config/nvim/.
-/usr/bin/nvim
+/usr/bin/nvim -c ":qa"
