@@ -10,5 +10,7 @@ chmod 775 4_vimrc_setup.sh
 ./4_vimrc_setup.sh  
 
 chmod 775 5_install_nvim.sh
-./5_install_nvim.sh 
+./5_install_nvim.sh
+
+sudo reboot
 
