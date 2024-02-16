@@ -3,6 +3,10 @@ filetype plugin on " Enable plugins and load plugin for the detected file type.
 filetype indent on " Load an indent file for the detected file type.
 
 " Ref: https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/
+" zo - to open a single fold under the cursor.
+" zc - to close the fold under the cursor.
+" zR - to open all folds.
+" zM - to close all folds.
 " SET ---------------------------------------------------------------- {{{
 
 set tabstop=2
