@@ -12,5 +12,5 @@ rm -rf ~/.config/nvim
 mkdir -p ~/.config/nvim
 cd ~/.config/nvim
 #wget https://raw.githubusercontent.com/nvim-lua/kickstart.nvim/master/init.lua
-cp init.lua ~/.config/nvim/.
+cp ./init.lua ~/.config/nvim/.
 /usr/bin/nvim -c ":qa"
