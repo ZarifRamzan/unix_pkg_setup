@@ -1,5 +1,7 @@
 #!/bin/bash 
 
+export DIR=$(pwd)
+
 chmod 775 2_install_unix_packages.sh
 ./2_install_unix_packages.sh  
 

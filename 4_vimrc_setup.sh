@@ -1,6 +1,8 @@
 #!/bin/bash 
 
-cp ~/unix_pkg_setup/vimrc ~/.
+export DIR=$(pwd)
+
+cp $DIR/vimrc ~/.
 mv ~/vimrc ~/.vimrc
 chmod 775 ~/.vimrc
 gvim ~/.vimrc -c ":PlugInstall"

@@ -1,4 +1,6 @@
 #!/bin/bash 
 
+export DIR=$(pwd)
+
 cp ~/.bashrc ~/.bashrc.original
-meld ~/unix_pkg_setup/bashrc ~/.bashrc &
+meld $DIR/bashrc ~/.bashrc &
