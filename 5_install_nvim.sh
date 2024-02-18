@@ -11,5 +11,6 @@ rm ~/nvim
 rm -rf ~/.config/nvim
 mkdir -p ~/.config/nvim
 #wget https://raw.githubusercontent.com/nvim-lua/kickstart.nvim/master/init.lua
-cp ./init.lua ~/.config/nvim/.
+chmod +w init.lua
+cp init.lua ~/.config/nvim/.
 /usr/bin/nvim -c ":qa"
