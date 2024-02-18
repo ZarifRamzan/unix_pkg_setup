@@ -1,7 +1,7 @@
 Steps to execute:
 1. Open terminal
 2. cd ~
-3. git clone git@github.com:ZarifRamzan/unix_pkg_setup.git
+3. git clone https://github.com/ZarifRamzan/unix_pkg_setup.git
 4. cd unix_pkg_setup
 5. chmod 775 1_install_all.sh
 6. ./1_install_all.sh
