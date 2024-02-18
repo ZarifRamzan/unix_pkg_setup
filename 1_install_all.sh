@@ -12,3 +12,5 @@ chmod 775 4_vimrc_setup.sh
 chmod 775 5_install_nvim.sh
 ./5_install_nvim.sh
 
+chmod 775 6_wsl2_kali_kex.sh
+./6_wsl2_kali_kex.sh
