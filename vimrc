@@ -24,13 +24,12 @@ set smartindent " Enables smart auto-indenting.
 set title " Sets window title in Vim.
 set laststatus=2 " Always displays the status line.
 set statusline=%F\ %m%r%h%w%=[%l/%L]\ [%p%%] " Displays file info, modification status.
-" syntax enable " Enables syntax highlighting in Vim.
+syntax enable " Enables syntax highlighting in Vim.
 set smartcase " Case-sensitive if lowercase typed.
 set nocompatible " Ensures Vim is not in vi-compatible mode.
 set mouse=a " Enable mouse.
-" set cursorline " Highlight the line currently under cursor.
 set autoread " Automatically updates files in Vim.
-set spell " Enable spell checking.
+" set spell " Enable spell checking.
 set linebreak " Enables automatic long line breaking.
 set hidden " Allows switching between buffers without saving.
 set encoding=utf-8 " Sets file encoding to UTF-8.
