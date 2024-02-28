@@ -13,3 +13,6 @@ chmod 775 4_vimrc_setup.sh
 
 chmod 775 5_install_nvim.sh
 ./5_install_nvim.sh
+
+chmod 775 7_inputrc_setup
+./7_inputrc_setup
