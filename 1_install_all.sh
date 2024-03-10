@@ -14,5 +14,8 @@ chmod 775 $DIR/4_vimrc_setup.sh
 chmod 775 $DIR/5_install_nvim.sh
 ./5_install_nvim.sh
 
+chmod 775 $DIR/6_wsl2_kali_kex.sh
+./6_wsl2_kali_kex.sh
+
 chmod 775 $DIR/7_inputrc_setup
 ./7_inputrc_setup
