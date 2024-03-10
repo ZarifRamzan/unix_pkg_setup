@@ -43,6 +43,7 @@ install_package "traceroute"
 install_package "tightvncserver"
 install_package "xrdp"
 install_package "curl" 
+install_package "openssh-server"
 
 # Display errors, if any
 if [ -s "$LOG_FILE" ]; then
