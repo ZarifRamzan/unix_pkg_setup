@@ -75,6 +75,8 @@ call plug#end()
 " Mappings code goes here.
 " Show file full path
 nnoremap P :echo expand('%:p')<CR>
+" Yank file full path
+nnoremap <A-c> :let @+ = expand('%:p')<CR>
 
 " Map the F5 key to run a Python script inside Vim.
 " I map F5 to a chain of commands here.
