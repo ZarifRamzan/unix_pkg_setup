@@ -44,7 +44,9 @@ install_package "tightvncserver"
 install_package "xrdp"
 install_package "curl" 
 install_package "openssh-server"
-install_package "fzf"
+install_package "fzf" #Fuzzy Finder
+install_package "stacer" #Resorces Monitoring
+install_package "x11vnc" #VNC Server
 
 # Display errors, if any
 if [ -s "$LOG_FILE" ]; then
