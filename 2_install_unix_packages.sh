@@ -19,13 +19,13 @@ sudo apt-get update -y
 sudo apt-get upgrade -y
 
 # Install packages with error handling
-install_package "vim"
-install_package "vim-gtk3"
-install_package "konsole"
-install_package "git"
-install_package "git-gui"
-install_package "htop"
-install_package "meld"
+install_package "vim" #Editor
+install_package "vim-gtk3" #Editor Gui
+install_package "konsole" #Konsole Terminal
+install_package "git" #Version Control system (VCS)
+install_package "git-gui" #VCS Gui
+install_package "htop" #Reources Monitoring
+install_package "meld" #Files Comparison
 install_package "wget"
 install_package "zip"
 install_package "ranger"
