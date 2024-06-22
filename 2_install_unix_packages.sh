@@ -44,6 +44,7 @@ install_package "tightvncserver"
 install_package "xrdp"
 install_package "curl" 
 install_package "openssh-server"
+install_package "fzf"
 
 # Display errors, if any
 if [ -s "$LOG_FILE" ]; then
