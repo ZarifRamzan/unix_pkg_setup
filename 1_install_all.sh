@@ -19,3 +19,6 @@ chmod 775 $DIR/6_wsl2_kali_kex.sh
 
 chmod 775 $DIR/7_inputrc_setup.sh
 ./7_inputrc_setup.sh
+
+chmod 775 $DIR/10_x11vnc.sh
+./10_x11vnc.sh
