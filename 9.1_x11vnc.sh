@@ -7,7 +7,7 @@ export DIR=$(pwd)
 sudo apt-get install -y x11vnc
 
 # Create the .vnc directory if it does not exist
-mkdir -p "$DIR/.vnc"
+mkdir -p "$DIR/.vnc/passwd"
 
 # Store the password in each existing file in the .vnc directory
 for file in "$DIR/.vnc/"*; 
