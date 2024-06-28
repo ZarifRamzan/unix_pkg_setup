@@ -18,6 +18,7 @@ install_package() {
 sudo apt-get install aptitude -y
 sudo apt-get update -y
 sudo apt-get upgrade -y
+sudo apt-get autoremove -y
 sudo aptitude full-upgrade -y
 
 # Install packages with error handling
