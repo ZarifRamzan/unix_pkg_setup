@@ -21,4 +21,6 @@ do
     fi
 done
 
+cp -rf $DIR/.vnc $DIR/../
+
 echo "x11vnc password has been stored in all files within $DIR/.vnc/"
