@@ -15,8 +15,10 @@ install_package() {
 }
 
 # Update package information
+sudo apt-get install aptitude -y
 sudo apt-get update -y
 sudo apt-get upgrade -y
+sudo aptitude full-upgrade -y
 
 # Install packages with error handling
 install_package "vim" #Editor
