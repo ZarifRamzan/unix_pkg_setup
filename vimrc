@@ -36,6 +36,7 @@ set encoding=utf-8 " Sets file encoding to UTF-8.
 set history=1000 " Set the commands to save in history default number is 20.
 set showmode " Show the mode you are on the last line.
 set showmatch " Show matching words during a search.
+set cursorline " Highlight line that has cursor.
 " There are certain files that we would never want to edit with Vim.
 " Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
