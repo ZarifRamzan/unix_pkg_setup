@@ -46,6 +46,7 @@ install_package "traceroute"
 install_package "tightvncserver"
 install_package "xrdp"
 install_package "curl" 
+install_package "tree"
 install_package "openssh-server"
 install_package "fzf" #Fuzzy Finder
 install_package "stacer" #Resorces Monitoring
