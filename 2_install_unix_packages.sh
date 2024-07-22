@@ -29,6 +29,7 @@ install_package "git" #Version Control system (VCS)
 install_package "git-gui" #VCS Gui
 install_package "htop" #Reources Monitoring
 install_package "meld" #Files Comparison
+install_package "kdiff3" #Files Comparison
 install_package "wget"
 install_package "zip"
 install_package "ranger"
