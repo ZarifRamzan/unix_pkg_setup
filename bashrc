@@ -139,12 +139,69 @@ alias find='find . -name'
 alias cl='clear'
 alias catv='cat -v'
 alias nv='nvim'
+alias yazi='/home/ubuntu24/yazi/target/release/yazi'
 
 [[ -s /usr/share/autojump/autojump.sh ]] && source /usr/share/autojump/autojump.sh
 
 cd() {
     command cd "$@" && ls -alh
 }
+
+# Define the custom rm function
+safe_rm() {
+    # Snapshot directory
+    local snapshot_dir="$HOME/.snapshot"
+    mkdir -p "$snapshot_dir"
+
+    # Extract options and files/directories
+    local options
+    local files
+    while [[ $# -gt 0 ]]; do
+        if [[ "$1" =~ ^- ]]; then
+            options+="$1 "
+        else
+            files+="$1 "
+        fi
+        shift
+    done
+
+    # Process each file or directory argument
+    for target in $files; do
+        # Check if the target exists
+        if [ ! -e "$target" ]; then
+            echo "Error: $target does not exist."
+            continue
+        fi
+
+        # Create a timestamped snapshot path
+        local timestamp=$(date +"%Y%m%d%H%M%S")
+        local snapshot_path="$snapshot_dir/$(basename "$target")_$timestamp"
+
+        # Move the target to the snapshot directory
+        echo "Moving '$target' to '$snapshot_path'"
+        mv "$target" "$snapshot_path"
+
+        # Schedule the removal of the snapshot after 4 days
+        (
+            sleep 4d
+            rm -rf "$snapshot_path"
+        ) &
+
+        echo "'$target' has been moved to '$snapshot_path' and will be deleted after 4 days."
+    done
+}
+
+# Override rm command with safe_rm
+rm() {
+    if [[ "$@" =~ ^-- ]]; then
+        # Pass through if -- options are used
+        command rm "$@"
+    else
+        # Call the safe_rm function with options
+        safe_rm "$@"
+    fi
+}
+
 
 ######################################################################################
 # Kali - Special aliases
