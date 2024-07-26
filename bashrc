@@ -178,7 +178,7 @@ safe_rm() {
         local snapshot_path="$snapshot_dir/$(basename "$target")_$timestamp"
 
         # Move the target to the snapshot directory
-        echo "Moving '$target' to '$snapshot_path'"
+        #echo "Moving '$target' to '$snapshot_path'"
         mv "$target" "$snapshot_path"
 
         # Schedule the removal of the snapshot after 4 days
@@ -187,7 +187,7 @@ safe_rm() {
             rm -rf "$snapshot_path"
         ) &
 
-        echo "'$target' has been moved to '$snapshot_path' and will be deleted after 4 days."
+        #echo "'$target' has been moved to '$snapshot_path' and will be deleted after 4 days."
     done
 }
 
