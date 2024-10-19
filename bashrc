@@ -140,12 +140,40 @@ alias cl='clear'
 alias catv='cat -v'
 alias nv='nvim'
 alias yazi='/home/ubuntu24/yazi/target/release/yazi'
+alias t='touch'
+alias c='cat'
+alias s='source'
+alias v='vim'
+alias g='gvim'
+alias m='minikube'
+alias k='kubectl'
 
 [[ -s /usr/share/autojump/autojump.sh ]] && source /usr/share/autojump/autojump.sh
 
+# Custom cd command
 cd() {
     command cd "$@" && ls -alh
 }
+
+# Custum find command
+findc() {
+    find . -name "*$1*"
+}
+
+# Custom grep command
+grepc() {
+    grep "$1" * -srin --color
+}
+grepl() {
+    grep "$1" * -sril --color
+}
+
+# Check if the line exists in /etc/sudoers and add it if not found
+if ! sudo grep -Fxq "ubuntu24 ALL=(ALL) NOPASSWD: /bin/rm -rf /home/ubuntu24/.snapshot" /etc/sudoers; then
+    #echo "Adding the setting to /etc/sudoers."
+    echo "ubuntu24 ALL=(ALL) NOPASSWD: /bin/grep, /bin/rm -rf /home/ubuntu24/.snapshot" | sudo EDITOR='tee -a' visudo
+fi
+
 
 # Define the custom rm function
 safe_rm() {
