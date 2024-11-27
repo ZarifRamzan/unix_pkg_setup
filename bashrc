@@ -212,7 +212,7 @@ safe_rm() {
         # Schedule the removal of the snapshot after 4 days
         (
             sleep 4d
-            rm -rf "$snapshot_path"
+            command rm -rf "$snapshot_path"
         ) &
 
         #echo "'$target' has been moved to '$snapshot_path' and will be deleted after 4 days."
